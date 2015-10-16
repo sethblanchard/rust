@@ -1,3 +1,7 @@
+//TODO:
+//Use this video: https://vimeo.com/channels/thenewlocalism/140346003
+//IN a bear like the promo image... 
+
 import { polyfill } from 'es6-promise'
 polyfill()
 
