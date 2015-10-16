@@ -10,8 +10,9 @@ export default function(app, assets) {
     fragmentShader: glslify('./shaders/horse.frag'),
     uniforms: assign({}, THREE.UniformsLib.lights, {
       iResolution: { type: 'v2', value: resolution },
-      iChannel0: { type: 't', value: assets.textures[0] },
-      iChannel1: { type: 't', value: assets.textures[1] },
+      iChannel0: { type: 't', value: assets.vidText },
+      //iChannel0: { type: 't', value: assets.textures[0] },
+ //     iChannel1: { type: 't', value: assets.textures[1] },
       iLookup: { type: 't', value: assets.lut },
       opacity: { type: 'f', value: 1 },
       morphTargetInfluences: { type: 'f', value: 0 },
